@@ -61,7 +61,7 @@
     .row.content {height:auto;} 
   }
 
-  textarea#email{
+  textarea#emailbox{
     width:500px;
     height:500px;
   }
