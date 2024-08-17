@@ -80,9 +80,9 @@
         $('button#sendemail').click(function(){
           var email = $('#deans').find(":selected").val();
           emailtext = $('textarea#emailbox').val()
-          var formatemailtext = emailtext.replace(" ", "%20");
-          formatemailtext = formatemailtext.replace("\n", "%0A0D");
-          
+          var formatemailtext = emailtext.replaceAll(" ", "%20");
+          formatemailtext = formatemailtext.replaceAll("\n", "%0D%0A");
+          console.log(formatemailtext)
 
           var emailhref = "mailto:" + email + "?subject=Support%20Our%20Students%2C%20Please%20Sign%20On!&bcc=umassdissenters@gmail.com&body="+formatemailtext;
 
