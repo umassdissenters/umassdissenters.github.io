@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <style>
+
+        </style>
+ 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        </script>
+
+        <script>
+    $(document).ready(function(){
+        console.log("ready!")
+        $('#generateemail').click(function(){
+          var email = $('#deans').find(":selected").val();
+          console.log(email);
+          var name = $('input#name').val();
+          if(email == "mari@comm.umass.edu"){
+            var emailtext = "Dear Dean Castañeda, \n I am a student at the UMass Honors College. \n I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best, \n -" + name;
+
+          }
+          else if(email == "hfadean@umass.edu"){
+            var emailtext = "Dear Dr. Maria del Guadalupe Davidson, \n I am a student at the UMass College of Humanities and Fine Arts. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+
+          else if(email == "mafox@umass.edu"){
+            var emailtext = "Dear Dean Michael Fox, \n I am a student at the UMass College of Natural Sciences. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+          
+          else if(email == "lhaas@umass.edu")
+          {
+            var emailtext = "Dear Dean Laura Haas, \n I am a student at the UMass College of Informatics and Computer Science. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+
+          else if(email == "gregkelly@umass.edu"){
+            var emailtext = "Dear Dean Gregory Kelly, \n I am a student at the UMass College of Education. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+
+          else if(email == "nsmani@umass.edu"){
+            var emailtext = "Dear Nandita Mani, \n I am a student at the UMass Amherst. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+          else if(email=="amassey@isenberg.@umass.edu"){
+            var emailtext = "Dear Dean Anne Massey, \n I am a student at the UMass Isenberg School of Management. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+
+          else if(email=="sraman@umass.edu"){
+            var emailtext = "Dear Dean Sanjay Raman, \n I am a student at the UMass College of Engineering. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+          else if(email="rrethemeyer@umass.edu"){
+            var emailtext = "Dear Dean R. Karl Rethemeyer, \n I am a student at the UMass College of Social and Behavioral Sciences. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+          else if(email="deansiegariz@umass.edu"){
+            var emailtext = "Dear Dean Anna Maria Siega-Riz, \n I am a student at the UMass School of Public Health and Health Sciences. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+          else if(email=="jurla@anthro.umass.edu"){
+            var emailtext = "Dear Dean Jacqueline Urla, \n I am a student at the UMass Graduate School. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+          else if(email=="avorder@umass.edu"){
+            var emailtext = "Dear Dean Allison Vorderstrasse, \n I am a student at the UMass College of Nursing. I was shocked and outraged after witnessing the brutal arrests of students, faculty, and community members on May 7th. UMass and UMPD responded with violence and undemocratic repression to a peaceful demonstration that was protesting UMass’ ties to war profiteering and genocide. In order to protect free speech on UMass’ campus, I am asking you to sign this pledge of support that stands with protestors facing unfair punishments and condemns UMass’ crackdown on peaceful demonstrations. \n As a Dean of this university, you have the power to influence UMass’ response to these demonstrations. Please stand with us in protecting our rights to free speech and to peacefully assemble! \n All my best," + name;
+          }
+          
+          
+          
+
+          $('textarea#emailbox').css('display', 'inline-block')
+          $('textarea#emailbox').val(emailtext)
+          $('#sendemail').css('display', 'inline-block')
+
+          
+
+          
+        });
+
+        $('button#sendemail').click(function(){
+          var email = $('#deans').find(":selected").val();
+          emailtext = $('textarea#emailbox').val()
+          var formatemailtext = emailtext.replaceAll(" ", "%20");
+          formatemailtext = formatemailtext.replaceAll("\n", "%0D%0A");
+          console.log(formatemailtext)
+
+          var emailhref = "mailto:" + email + "?subject=Support%20Our%20Students%2C%20Please%20Sign%20On!&bcc=umassdissenters@gmail.com&body="+formatemailtext;
+
+          var mail = document.createElement("a");
+          mail.href = emailhref;
+          mail.click();
+
+          
+        })
+
+       
+      })
+        </script>
+    </head>
+
+    <body>
+      <div id="emailcampaignintro">
+        <h2>
+          Email Campaign
+        </h2>
+        <a href="#emailtemplateinput">
+          <button>template here!</button>
+        </a>
+
+        <p>
+          In light of UMass’ repression against Pro-Palestine protests, we need everyone in our community to stand with us. UMass Deans have a lot of power, so their pledge of support will help us fight against UMass’ crackdown on free speech!
+        </p>
+
+      </div>
+
+      <div id="pledgeofsupport">
+        <div id="pledgeofsupporttitle">
+          <h2>
+            Pledge of Support
+          </h2>
+
+          <p>
+            In light of University of Massachusetts Amherst’s repressive actions against protestors in the last academic year, I stand with students and community members who were protesting against UMass ties to the genocide in Gaza.
+            <br>
+            I condemn the university’s harsh crackdown on peaceful protestors, which includes: calling the state police, placing unfair code of conduct charges on students, revoking students’ degrees, banning community members from campus, and attempting to push felony charges onto student leaders. I also call on UMass to publicize its ties to war profiteers such as Raytheon.
+            <br>
+            I pledge to use my power to support the rights of the UMass community to engage in peaceful demonstrations and will stand with students and community members against current and further repression by the university.
+          </p>
+        </div>
+
+
+      </div>
+
+      
+
+      <div id="emailtemplate">
+        <div id="emailtemplatetitle">
+          <h2>
+            Use this template!
+          </h2>
+        </div>
+        <div id="emailtemplateinput">
+          <select name="deans" id="deans">
+          <option value="mari@comm.umass.edu">Honors College: Dean Mari Castañeda</option>
+          <option value="hfadean@umass.edu">HFA: Dean Dr. Maria del Guadalupe Davidson</option>
+          <option value="mafox@umass.edu">CNS: Dean Michael Fox</option>
+          <option value="lhaas@umass.edu">CICS: Dean Laura Haas</option>
+          <option value="gregkelly@umass.edu">College of Education: Dean Greg Kelly</option>
+          <option value="nsmani@umass.edu">UMass Libraries: Dean Nandita Mani</option>
+          <option value="amassey@isenberg.umass.edu">Isenberg: Dean Anne Massey</option>
+          <option value="sraman@umass.edu">College of Engineering: Dean Sanjay Raman</option>
+          <option value="rrethemeyer@umass.edu">SBS: Dean R. Karl Rethemeyer</option>
+          <option value="deansiegariz@umass.edu">SPPHS: Dean Anna Maria Siega-Riz</option>
+          <option value="jurla@anthro.umass.edu">Graduate School: Dean Jacqueline Urla</option>
+          <option value="avorder@umass.edu">College of Nursing: Dean Allison Vorderstrasse</option>
+        </select>
+
+        
+
+         <input type="text" id="name" name="name" placeholder="Your Name">
+
+          <br>
+        </div>
+        
+  
+          <button id="generateemail">
+            Generate Email!
+          </button>
+  
+  
+          <br>
+  
+          <textarea id='emailbox' style="display: none">
+            
+          </textarea>
+  
+          <br>
+  
+      
+          <button id="sendemail" style="display: none">
+            Send Email!
+          </button>
+      </div>
+    </body>
+</html>
