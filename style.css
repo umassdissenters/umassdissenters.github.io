@@ -2,3 +2,66 @@
     color: navy;
 }
  */
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 15px 0; /* Adds more vertical space to the navbar */
+
+  }
+  .logo-image{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6px;
+}
+  .logo-image img {
+      width: auto; /* Ensures the image covers the container */
+      height: auto; /* Maintains the aspect ratio */
+      object-fit: cover; /* Ensures the image fills the circle properly */
+      max-height: 100%;
+  }
+  .navbar-header {
+      color: navy;
+  }
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 100vh}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #80bed4;
+    height: 100%;
+  }
+  /* Increase the space around the logo image */
+  .navbar-brand {
+      padding: 10px 15px;
+  }
+  
+  body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  }
+  /* Set black background color, white text and some padding */
+  /* footer {
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+  } */
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;} 
+  }
+
+  textarea#email{
+    width:500px;
+    height:500px;
+  }
