@@ -18,8 +18,16 @@
     height: 46px;
     border-radius: 50%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: -6px;
 }
+    .logo-image img {
+        width: 100%; /* Ensures the image covers the container */
+        height: auto; /* Maintains the aspect ratio */
+        object-fit: cover; /* Ensures the image fills the circle properly */
+    }
     .navbar-header {
         color: navy;
     }
